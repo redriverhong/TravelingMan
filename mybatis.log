@@ -1,0 +1,4 @@
+[INFO][2017-04-27 10:38:55,028][cyh.util.EmailUtil]result:
+null{"respCode":"00000","failCount":"0","failList":[],"smsId":"b2ec39dc42eb4f4ba8707bcbf8a1c5d5"}
+[INFO][2017-04-27 10:39:52,475][cyh.util.EmailUtil]result:
+null{"respCode":"00000","failCount":"0","failList":[],"smsId":"169778d30c5840bba70f656b3ce31f00"}
