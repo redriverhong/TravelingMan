@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>user login</title>
+   <link rel="stylesheet" type="text/css" href="../../css/style.css">
+   <script src="../../plugins/jquery-3.1.1.min.js"></script>
+   <script src="../../js/login.js"></script>
+   
+  </head>
+  <body>
+  	<div id="login_reg" style="width:450px;height:500px;margin:auto;border-color: #00ff00">
+        <div style="width:150px;height:25px;margin:auto;">
+            <label>
+                <a id="a_login" href="javascript:void(0);" style="text-decoration:none;">登　录</a>
+                <a id="a_reg" href="javascript:void(0);">注　册</a>
+            </label>
+        </div>
+        <div style="width:150px;height:8px;margin:auto;">
+        	<span id="login_warn" style="margin:auto;font-size:12px;color:red;"></span>
+        </div>
+        <div class="login" style="width:400px;height:200px;margin:auto;" >
+        	<ul style="list-style:none">
+        		<li>
+        			<label>用户名：<input class="name" id="name" type="text" /></label>
+        		</li>
+        		<li>
+        			<label>密　码：<input class="password" id="password" type="password" /></label>
+        		</li>
+        		<br>
+        		<li>
+        			<a id="btn_login" href="javascript:void(0)" style="margin-left:100px;">登　录</a>
+        		</li>
+        	</ul>
+        </div>
+        <div class="reg" style="width:400px;height:450px;margin:auto;" hidden>
+        	<ul style="list-style:none">
+        		<li>
+        			<label>用户　名：<input class="name_reg" id="name_reg" type="text" /></label>
+        			<span class="name_reg_warn"></span>
+        		</li>
+        		<li>
+        			<label>密　　码：<input class="pwd_reg" id="pwd_reg" type="password" /></label>
+        			<span class="pwd_reg_warn"></span>
+        		</li>
+        		<li>
+        			<label>确认密码：<input class="pwd1_reg" id="pwd1_reg" type="password" /></label>
+        			<span class="pwd1_reg_warn"></span>
+        		</li>
+        		<li>
+        			<label>认证方式：<input class="emailOrTel" id="emailOrTel" type="text" value="手机号/邮箱" /></label>
+        			<span class="emailOrTel_warn"></span>
+            		<a id="sendEmailOrMsg" class="sendEmailOrMsg" href="javascript:void(0)">发送验证码</a>
+        		</li>
+        		<li>
+        			<label><span">校验　码：</span><input class="et_code" id="et_code" type="text" value="" /></label>
+            		<img id="etcode_ok" style="width:20px;height:20px;vertical-align:middle;" src="" hidden />
+        		</li>
+        		<li>
+        			<label><span style="float:left;">验证　码：</span><input class="code" id="code" type="text" style="float:left" /></label>
+            		<a calss="create_code" id="create_code" style="display: block;float:left;"></a>
+            		<img id="code_ok" style="width:20px;height:20px;float:left;" src="" hidden/>
+        		</li>
+        		<br><br>
+        		
+        		<li>
+        			
+        			<a id="btn_reg" href="javascript:void(0)" style="float:left;margin-left:100px;">注　册</a>
+        			<!-- <button id="btn_reg" onclick="reg_click();">注　册</button>
+        			  <input type="button" id="btn_reg" onclick="reg_click();" value="注　册"  />
+        			  -->
+        			
+        			
+        		</li>
+        	</ul>
+            
+        </div>
+    </div>
+  </body>
+</html>
